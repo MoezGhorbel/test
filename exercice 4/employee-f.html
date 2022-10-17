@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Create</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center text-primary">Employé</h2>
+    <form class="row mt-3 needs-validation" onsubmit="create(event)" novalidate>
+      <!--firstName-->
+      <div class="form-group mb-3">
+        <label for="firstName" class="text-custom-color mb-1">Prénom :</label>
+        <input type="text" class="form-control" name="firstName" id="firstName"
+          placeholder="Entrer le prénom de l'employé ici" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">
+          Ce champ est obligatoire.
+        </div>
+      </div>
+
+      <!--lastName-->
+      <div class="form-group mb-3">
+        <label for="lastName" class="text-custom-color mb-1">Nom :</label>
+        <input type="text" class="form-control" name="lastName" id="lastName"
+          placeholder="Entrer le nom de l'employé ici" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">
+          Ce champ est obligatoire.
+        </div>
+      </div>
+
+      <!--email-->
+      <div class="form-group mb-3">
+        <label for="email" class="text-custom-color mb-1">E-mail :</label>
+        <input type="email" class="form-control" name="email" id="email"
+          placeholder="Entrer l'adresse email de l'employé ici" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback" id="eml"></div>
+      </div>
+
+      <!--address-->
+      <div class="form-group mb-3">
+        <label for="address" class="text-custom-color mb-1">Adresse :</label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="Entrer l'adresse de l'employé ici"
+          required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">
+          Ce champ est obligatoire.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success">S'inscrire</button>
+
+
+    </form>
+  </div>
+
+  <script src="employee-f.js"></script>
+</body>
+
+</html>
